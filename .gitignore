@@ -1,0 +1,57 @@
+# Python bytecode & caching
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE / Editor configuration
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables & secrets
+.env
+*.local
+
+# Datasets (Exclude raw CSV from Git, download via script)
+data/raw/*.csv
+data/raw/*.zip
+data/processed/*.csv
+!data/README.md
+!data/raw/README.md
+!data/processed/README.md
+
+# Large serialized models (Optional to track model.joblib if < 50MB)
+models/*.joblib
+!models/README.md
+
+# Transient prediction & alert run logs (Keep structure and summary outputs)
+outputs/predictions/predictions_*.csv
+outputs/alerts/alerts_*.json
+!outputs/README.md
+!outputs/predictions/README.md
+!outputs/alerts/README.md
+!outputs/metrics.json
+!outputs/training_metrics.json
+!outputs/forest.json
+!outputs/holdout_predictions.csv
+
+# Keep all proof images and visual documentation assets
+!images/*.png
+!images/*.jpg
+!images/*.jpeg
+!images/*.svg
+!images/README.md
